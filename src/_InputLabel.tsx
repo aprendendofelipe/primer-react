@@ -32,9 +32,25 @@ const InputLabel: React.FC<React.PropsWithChildren<Props>> = ({
   sx,
   as = 'label',
 }) => {
-  return (
+  return visuallyHidden ? (
     <VisuallyHidden
-      isVisible={!visuallyHidden}
+      as={
+        as as 'label' /* This assertion is clearly wrong, but it's the only way TS will allow the htmlFor prop to be possibly defined */
+      }
+      htmlFor={htmlFor}
+      id={id}
+    >
+      {required ? (
+        <Box display="flex" as="span">
+          <Box mr={1}>{children}</Box>
+          <span aria-hidden="true">*</span>
+        </Box>
+      ) : (
+        children
+      )}
+    </VisuallyHidden>
+  ) : (
+    <Box
       as={
         as as 'label' /* This assertion is clearly wrong, but it's the only way TS will allow the htmlFor prop to be possibly defined */
       }
@@ -58,7 +74,7 @@ const InputLabel: React.FC<React.PropsWithChildren<Props>> = ({
       ) : (
         children
       )}
-    </VisuallyHidden>
+    </Box>
   )
 }
 
