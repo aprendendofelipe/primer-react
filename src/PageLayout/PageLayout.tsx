@@ -8,7 +8,7 @@ import {BetterSystemStyleObject, merge, SxProp} from '../sx'
 import {Theme} from '../ThemeProvider'
 import createSlots from '../utils/create-slots'
 import {canUseDOM} from '../utils/environment'
-import VisuallyHidden from '../_VisuallyHidden'
+import ToggleVisibility from '../_ToggleVisibility'
 import {useStickyPaneHeight} from './useStickyPaneHeight'
 
 const {Slots, Slot} = createSlots(['Header', 'Footer'])
@@ -738,7 +738,7 @@ const Pane = React.forwardRef<HTMLDivElement, React.PropsWithChildren<PageLayout
           })}
         >
           {resizable && (
-            <VisuallyHidden>
+            <ToggleVisibility>
               <form onSubmit={handleWidthFormSubmit}>
                 {/* eslint-disable-next-line jsx-a11y/label-has-for */}
                 <label htmlFor={`${paneId}-width-input`}>Pane width</label>
@@ -761,7 +761,7 @@ const Pane = React.forwardRef<HTMLDivElement, React.PropsWithChildren<PageLayout
                 />
                 <button type="submit">Change width</button>
               </form>
-            </VisuallyHidden>
+            </ToggleVisibility>
           )}
           {children}
         </Box>
