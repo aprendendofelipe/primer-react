@@ -35,9 +35,7 @@ const InputLabel: React.FC<React.PropsWithChildren<Props>> = ({
   return (
     <ToggleVisibility
       isVisible={!visuallyHidden}
-      as={
-        as as 'label' /* This assertion is clearly wrong, but it's the only way TS will allow the htmlFor prop to be possibly defined */
-      }
+      as={as}
       htmlFor={htmlFor}
       id={id}
       sx={{
