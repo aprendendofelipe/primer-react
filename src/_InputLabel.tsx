@@ -36,6 +36,8 @@ const InputLabel: React.FC<React.PropsWithChildren<Props>> = ({
     <ToggleVisibility
       isVisible={!visuallyHidden}
       as={as}
+      // TODO: Make the ToggleVisibility component polymorphic
+      // @ts-ignore
       htmlFor={htmlFor}
       id={id}
       sx={{
