@@ -8,6 +8,7 @@ const ROOT_DIRECTORY = path.resolve(__dirname, '..', '..')
 // TODO: Remove this allowlist when all components use the new story format
 const allowlist = [
   'ActionList',
+  'ActionMenu',
   'Avatar',
   'AvatarStack',
   'AvatarPair',
@@ -17,15 +18,25 @@ const allowlist = [
   'Checkbox',
   'CheckboxGroup',
   'CounterLabel',
+  'DataTable',
+  'Details',
   'Flash',
   'Heading',
   'IconButton',
   'FilteredActionList',
   'Link',
+  'Radio',
+  'RadioGroup',
+  'Select',
+  'SegmentedControl',
   'StateLabel',
   'TabNav',
+  'Textarea',
+  'TextInput',
+  'TextInputWithTokens',
   'TreeView',
   'Timeline',
+  'ToggleSwitch',
   'UnderlineNav2',
 ]
 const stories = glob
