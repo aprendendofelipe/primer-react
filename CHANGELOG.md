@@ -1,5 +1,11 @@
 # @primer/components
 
+## 35.23.0
+
+### Minor Changes
+
+- [#3012](https://github.com/primer/react/pull/3012) [`04d9db02`](https://github.com/primer/react/commit/04d9db02c0ba6ddca13a0b2bd0f4ada3e00991e7) Thanks [@radglob](https://github.com/radglob)! - Adds `tabIndex` and `role="region"` to `PageLayout.Pane` when overflow is detected (scrollHeight > clientHeight). Also requires either `aria-labelledby` or `aria-label` when overflow is detected, and throws an error if neither is defined.
+
 ## 35.22.0
 
 ### Minor Changes
