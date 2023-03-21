@@ -28,14 +28,14 @@ Our documentation site lives at [primer.style/react](https://primer.style/react)
 
 ## Installation
 
-Install @primer/react in your project with your package manager of choice:
+Install @felipebarso/primer-react in your project with your package manager of choice:
 
 ```console
-npm install @primer/react
+npm install @felipebarso/primer-react
 ```
 
 ```console
-yarn add @primer/react
+yarn add @felipebarso/primer-react
 ```
 
 ## Roadmap

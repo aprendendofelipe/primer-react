@@ -1,7 +1,7 @@
 {
-  "name": "@primer/react",
+  "name": "@felipebarso/primer-react",
   "version": "35.21.0",
-  "description": "An implementation of GitHub's Primer Design System using React",
+  "description": "Fork of @primer/react, an implementation of GitHub's Primer Design System using React",
   "main": "lib/index.js",
   "module": "lib-esm/index.js",
   "exports": {
@@ -58,7 +58,7 @@
     "size": "size-limit",
     "prepare": "husky install"
   },
-  "repository": "primer/react",
+  "repository": "aprendendofelipe/primer-react",
   "keywords": [
     "react",
     "components",
