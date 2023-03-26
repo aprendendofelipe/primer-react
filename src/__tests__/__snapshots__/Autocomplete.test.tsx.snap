@@ -5,13 +5,13 @@ exports[`snapshots renders a custom empty state message 1`] = `
   .c0 {
   font-size: 14px;
   line-height: 20px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #d0d7de;
+  background-color: var(--canvas-default,#ffffff);
+  border: 1px solid var(--border-default,#d0d7de);
   border-radius: 6px;
   outline: none;
-  box-shadow: inset 0 1px 0 rgba(208,215,222,0.2);
+  box-shadow: var(--primer-shadow-inset,inset 0 1px 0 rgba(208,215,222,0.2));
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -37,25 +37,25 @@ exports[`snapshots renders a custom empty state message 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::-moz-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:-ms-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:focus-within {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   outline: none;
-  box-shadow: inset 0 0 0 1px #0969da;
+  box-shadow: inset 0 0 0 1px var(--accent-fg,#0969da);
 }
 
 .c0 > textarea {
@@ -71,7 +71,7 @@ exports[`snapshots renders a custom empty state message 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -165,13 +165,13 @@ exports[`snapshots renders a loading state 1`] = `
   .c0 {
   font-size: 14px;
   line-height: 20px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #d0d7de;
+  background-color: var(--canvas-default,#ffffff);
+  border: 1px solid var(--border-default,#d0d7de);
   border-radius: 6px;
   outline: none;
-  box-shadow: inset 0 1px 0 rgba(208,215,222,0.2);
+  box-shadow: var(--primer-shadow-inset,inset 0 1px 0 rgba(208,215,222,0.2));
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -197,25 +197,25 @@ exports[`snapshots renders a loading state 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::-moz-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:-ms-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:focus-within {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   outline: none;
-  box-shadow: inset 0 0 0 1px #0969da;
+  box-shadow: inset 0 0 0 1px var(--accent-fg,#0969da);
 }
 
 .c0 > textarea {
@@ -231,7 +231,7 @@ exports[`snapshots renders a loading state 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -360,13 +360,13 @@ exports[`snapshots renders a menu that contains an item to add to the menu 1`] =
   .c0 {
   font-size: 14px;
   line-height: 20px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #d0d7de;
+  background-color: var(--canvas-default,#ffffff);
+  border: 1px solid var(--border-default,#d0d7de);
   border-radius: 6px;
   outline: none;
-  box-shadow: inset 0 1px 0 rgba(208,215,222,0.2);
+  box-shadow: var(--primer-shadow-inset,inset 0 1px 0 rgba(208,215,222,0.2));
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -392,25 +392,25 @@ exports[`snapshots renders a menu that contains an item to add to the menu 1`] =
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::-moz-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:-ms-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:focus-within {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   outline: none;
-  box-shadow: inset 0 0 0 1px #0969da;
+  box-shadow: inset 0 0 0 1px var(--accent-fg,#0969da);
 }
 
 .c0 > textarea {
@@ -426,7 +426,7 @@ exports[`snapshots renders a menu that contains an item to add to the menu 1`] =
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -541,7 +541,7 @@ exports[`snapshots renders a menu that contains an item to add to the menu 1`] =
   display: -ms-flexbox;
   display: flex;
   border-radius: 6px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
   -webkit-text-decoration: none;
@@ -560,7 +560,7 @@ exports[`snapshots renders a menu that contains an item to add to the menu 1`] =
   position: absolute;
   width: 100%;
   top: -7px;
-  border: 0 solid hsla(210,18%,87%,1);
+  border: 0 solid var(--border-muted,hsla(210,18%,87%,1));
   border-top-width: 0;
 }
 
@@ -577,20 +577,20 @@ exports[`snapshots renders a menu that contains an item to add to the menu 1`] =
 }
 
 .c4[data-is-active-descendant='activated-directly'] {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c4[data-is-active-descendant='activated-indirectly'] {
-  background: rgba(208,215,222,0.32);
+  background: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
 }
 
 .c4:focus {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
   outline: none;
 }
 
 .c4:active {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c5 {
@@ -647,18 +647,18 @@ exports[`snapshots renders a menu that contains an item to add to the menu 1`] =
 }
 
 .c10 svg {
-  fill: #57606a;
+  fill: var(--fg-muted,#57606a);
   font-size: 12px;
 }
 
 .c6 rect {
-  fill: #ffffff;
-  stroke: #d0d7de;
+  fill: var(--canvas-default,#ffffff);
+  stroke: var(--border-default,#d0d7de);
   shape-rendering: auto;
 }
 
 .c6 path {
-  fill: #ffffff;
+  fill: var(--fg-onEmphasis,#ffffff);
   opacity: 0;
 }
 
@@ -670,12 +670,12 @@ exports[`snapshots renders a menu that contains an item to add to the menu 1`] =
 .c1[data-has-active-descendant],
 .c1:focus-within {
   --item-hover-bg-override: none;
-  --item-hover-divider-border-color-override: hsla(210,18%,87%,1);
+  --item-hover-divider-border-color-override: var(--border-muted,hsla(210,18%,87%,1));
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
-    background: var( --item-hover-bg-override,rgba(208,215,222,0.32) );
+    background: var( --item-hover-bg-override,var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32)) );
     cursor: pointer;
   }
 }
@@ -1318,13 +1318,13 @@ exports[`snapshots renders a multiselect input 1`] = `
   .c0 {
   font-size: 14px;
   line-height: 20px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #d0d7de;
+  background-color: var(--canvas-default,#ffffff);
+  border: 1px solid var(--border-default,#d0d7de);
   border-radius: 6px;
   outline: none;
-  box-shadow: inset 0 1px 0 rgba(208,215,222,0.2);
+  box-shadow: var(--primer-shadow-inset,inset 0 1px 0 rgba(208,215,222,0.2));
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -1350,25 +1350,25 @@ exports[`snapshots renders a multiselect input 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::-moz-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:-ms-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:focus-within {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   outline: none;
-  box-shadow: inset 0 0 0 1px #0969da;
+  box-shadow: inset 0 0 0 1px var(--accent-fg,#0969da);
 }
 
 .c0 > textarea {
@@ -1384,7 +1384,7 @@ exports[`snapshots renders a multiselect input 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -1499,7 +1499,7 @@ exports[`snapshots renders a multiselect input 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 6px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
   -webkit-text-decoration: none;
@@ -1518,7 +1518,7 @@ exports[`snapshots renders a multiselect input 1`] = `
   position: absolute;
   width: 100%;
   top: -7px;
-  border: 0 solid hsla(210,18%,87%,1);
+  border: 0 solid var(--border-muted,hsla(210,18%,87%,1));
   border-top-width: 0;
 }
 
@@ -1535,20 +1535,20 @@ exports[`snapshots renders a multiselect input 1`] = `
 }
 
 .c4[data-is-active-descendant='activated-directly'] {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c4[data-is-active-descendant='activated-indirectly'] {
-  background: rgba(208,215,222,0.32);
+  background: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
 }
 
 .c4:focus {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
   outline: none;
 }
 
 .c4:active {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c5 {
@@ -1573,13 +1573,13 @@ exports[`snapshots renders a multiselect input 1`] = `
 }
 
 .c6 rect {
-  fill: #ffffff;
-  stroke: #d0d7de;
+  fill: var(--canvas-default,#ffffff);
+  stroke: var(--border-default,#d0d7de);
   shape-rendering: auto;
 }
 
 .c6 path {
-  fill: #ffffff;
+  fill: var(--fg-onEmphasis,#ffffff);
   opacity: 0;
 }
 
@@ -1591,12 +1591,12 @@ exports[`snapshots renders a multiselect input 1`] = `
 .c1[data-has-active-descendant],
 .c1:focus-within {
   --item-hover-bg-override: none;
-  --item-hover-divider-border-color-override: hsla(210,18%,87%,1);
+  --item-hover-divider-border-color-override: var(--border-muted,hsla(210,18%,87%,1));
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
-    background: var( --item-hover-bg-override,rgba(208,215,222,0.32) );
+    background: var( --item-hover-bg-override,var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32)) );
     cursor: pointer;
   }
 }
@@ -2186,13 +2186,13 @@ exports[`snapshots renders a multiselect input with selected menu items 1`] = `
   .c0 {
   font-size: 14px;
   line-height: 20px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #d0d7de;
+  background-color: var(--canvas-default,#ffffff);
+  border: 1px solid var(--border-default,#d0d7de);
   border-radius: 6px;
   outline: none;
-  box-shadow: inset 0 1px 0 rgba(208,215,222,0.2);
+  box-shadow: var(--primer-shadow-inset,inset 0 1px 0 rgba(208,215,222,0.2));
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -2218,25 +2218,25 @@ exports[`snapshots renders a multiselect input with selected menu items 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::-moz-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:-ms-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:focus-within {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   outline: none;
-  box-shadow: inset 0 0 0 1px #0969da;
+  box-shadow: inset 0 0 0 1px var(--accent-fg,#0969da);
 }
 
 .c0 > textarea {
@@ -2252,7 +2252,7 @@ exports[`snapshots renders a multiselect input with selected menu items 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -2367,7 +2367,7 @@ exports[`snapshots renders a multiselect input with selected menu items 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 6px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
   -webkit-text-decoration: none;
@@ -2386,7 +2386,7 @@ exports[`snapshots renders a multiselect input with selected menu items 1`] = `
   position: absolute;
   width: 100%;
   top: -7px;
-  border: 0 solid hsla(210,18%,87%,1);
+  border: 0 solid var(--border-muted,hsla(210,18%,87%,1));
   border-top-width: 0;
 }
 
@@ -2403,20 +2403,20 @@ exports[`snapshots renders a multiselect input with selected menu items 1`] = `
 }
 
 .c4[data-is-active-descendant='activated-directly'] {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c4[data-is-active-descendant='activated-indirectly'] {
-  background: rgba(208,215,222,0.32);
+  background: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
 }
 
 .c4:focus {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
   outline: none;
 }
 
 .c4:active {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c5 {
@@ -2441,24 +2441,24 @@ exports[`snapshots renders a multiselect input with selected menu items 1`] = `
 }
 
 .c10 rect {
-  fill: #ffffff;
-  stroke: #d0d7de;
+  fill: var(--canvas-default,#ffffff);
+  stroke: var(--border-default,#d0d7de);
   shape-rendering: auto;
 }
 
 .c10 path {
-  fill: #ffffff;
+  fill: var(--fg-onEmphasis,#ffffff);
   opacity: 0;
 }
 
 .c6 rect {
-  fill: #0969da;
-  stroke: #0969da;
+  fill: var(--accent-fg,#0969da);
+  stroke: var(--accent-fg,#0969da);
   shape-rendering: auto;
 }
 
 .c6 path {
-  fill: #ffffff;
+  fill: var(--fg-onEmphasis,#ffffff);
   opacity: 1;
 }
 
@@ -2470,12 +2470,12 @@ exports[`snapshots renders a multiselect input with selected menu items 1`] = `
 .c1[data-has-active-descendant],
 .c1:focus-within {
   --item-hover-bg-override: none;
-  --item-hover-divider-border-color-override: hsla(210,18%,87%,1);
+  --item-hover-divider-border-color-override: var(--border-muted,hsla(210,18%,87%,1));
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
-    background: var( --item-hover-bg-override,rgba(208,215,222,0.32) );
+    background: var( --item-hover-bg-override,var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32)) );
     cursor: pointer;
   }
 }
@@ -3065,13 +3065,13 @@ exports[`snapshots renders a single select input 1`] = `
   .c0 {
   font-size: 14px;
   line-height: 20px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #d0d7de;
+  background-color: var(--canvas-default,#ffffff);
+  border: 1px solid var(--border-default,#d0d7de);
   border-radius: 6px;
   outline: none;
-  box-shadow: inset 0 1px 0 rgba(208,215,222,0.2);
+  box-shadow: var(--primer-shadow-inset,inset 0 1px 0 rgba(208,215,222,0.2));
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -3097,25 +3097,25 @@ exports[`snapshots renders a single select input 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::-moz-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:-ms-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:focus-within {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   outline: none;
-  box-shadow: inset 0 0 0 1px #0969da;
+  box-shadow: inset 0 0 0 1px var(--accent-fg,#0969da);
 }
 
 .c0 > textarea {
@@ -3131,7 +3131,7 @@ exports[`snapshots renders a single select input 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -3246,7 +3246,7 @@ exports[`snapshots renders a single select input 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 6px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
   -webkit-text-decoration: none;
@@ -3265,7 +3265,7 @@ exports[`snapshots renders a single select input 1`] = `
   position: absolute;
   width: 100%;
   top: -7px;
-  border: 0 solid hsla(210,18%,87%,1);
+  border: 0 solid var(--border-muted,hsla(210,18%,87%,1));
   border-top-width: 0;
 }
 
@@ -3282,20 +3282,20 @@ exports[`snapshots renders a single select input 1`] = `
 }
 
 .c4[data-is-active-descendant='activated-directly'] {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c4[data-is-active-descendant='activated-indirectly'] {
-  background: rgba(208,215,222,0.32);
+  background: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
 }
 
 .c4:focus {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
   outline: none;
 }
 
 .c4:active {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c1 {
@@ -3306,12 +3306,12 @@ exports[`snapshots renders a single select input 1`] = `
 .c1[data-has-active-descendant],
 .c1:focus-within {
   --item-hover-bg-override: none;
-  --item-hover-divider-border-color-override: hsla(210,18%,87%,1);
+  --item-hover-divider-border-color-override: var(--border-muted,hsla(210,18%,87%,1));
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
-    background: var( --item-hover-bg-override,rgba(208,215,222,0.32) );
+    background: var( --item-hover-bg-override,var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32)) );
     cursor: pointer;
   }
 }
@@ -3689,7 +3689,7 @@ exports[`snapshots renders with a custom text input component 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 6px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
   -webkit-text-decoration: none;
@@ -3708,7 +3708,7 @@ exports[`snapshots renders with a custom text input component 1`] = `
   position: absolute;
   width: 100%;
   top: -7px;
-  border: 0 solid hsla(210,18%,87%,1);
+  border: 0 solid var(--border-muted,hsla(210,18%,87%,1));
   border-top-width: 0;
 }
 
@@ -3725,20 +3725,20 @@ exports[`snapshots renders with a custom text input component 1`] = `
 }
 
 .c4[data-is-active-descendant='activated-directly'] {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c4[data-is-active-descendant='activated-indirectly'] {
-  background: rgba(208,215,222,0.32);
+  background: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
 }
 
 .c4:focus {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
   outline: none;
 }
 
 .c4:active {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c1 {
@@ -3749,12 +3749,12 @@ exports[`snapshots renders with a custom text input component 1`] = `
 .c1[data-has-active-descendant],
 .c1:focus-within {
   --item-hover-bg-override: none;
-  --item-hover-divider-border-color-override: hsla(210,18%,87%,1);
+  --item-hover-divider-border-color-override: var(--border-muted,hsla(210,18%,87%,1));
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c4:hover {
-    background: var( --item-hover-bg-override,rgba(208,215,222,0.32) );
+    background: var( --item-hover-bg-override,var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32)) );
     cursor: pointer;
   }
 }
@@ -4074,13 +4074,13 @@ exports[`snapshots renders with an input value 1`] = `
   .c0 {
   font-size: 14px;
   line-height: 20px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   vertical-align: middle;
-  background-color: #ffffff;
-  border: 1px solid #d0d7de;
+  background-color: var(--canvas-default,#ffffff);
+  border: 1px solid var(--border-default,#d0d7de);
   border-radius: 6px;
   outline: none;
-  box-shadow: inset 0 1px 0 rgba(208,215,222,0.2);
+  box-shadow: var(--primer-shadow-inset,inset 0 1px 0 rgba(208,215,222,0.2));
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -4106,25 +4106,25 @@ exports[`snapshots renders with an input value 1`] = `
 }
 
 .c0::-webkit-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::-moz-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:-ms-input-placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0::placeholder {
-  color: #6e7781;
+  color: var(--fg-subtle,#6e7781);
 }
 
 .c0:focus-within {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   outline: none;
-  box-shadow: inset 0 0 0 1px #0969da;
+  box-shadow: inset 0 0 0 1px var(--accent-fg,#0969da);
 }
 
 .c0 > textarea {
@@ -4140,7 +4140,7 @@ exports[`snapshots renders with an input value 1`] = `
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;

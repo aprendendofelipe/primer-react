@@ -53,14 +53,26 @@ const space = ['0', '4px', '8px', '16px', '24px', '32px', '40px', '48px', '64px'
 /**
  * @type Record<keyof typeof primitives.colors, Record<'colors' | 'shadows', Partial<typeof primitives.colors.light>>
  */
-const colorSchemes = Object.entries(primitives.colors).reduce((acc, [name, variables]) => {
-  const {colors, shadows} = partitionColors(variables)
-  acc[name] = {
-    colors: omitScale(colors),
-    shadows: omitScale(shadows),
+const colorSchemes = {light: {}}
+
+let {colors, shadows} = partitionColors(primitives.colors.light)
+colors = omitScale(colors)
+shadows = omitScale(shadows)
+colorSchemes.light.colors = changeValuesToVars('', colors)
+colorSchemes.light.shadows = changeValuesToVars('', shadows)
+
+function changeValuesToVars(name, value) {
+  if (typeof value === 'string') {
+    return `var(-${name},${value})`
   }
-  return acc
-}, {})
+
+  const obj = {}
+
+  for (const key of Object.keys(value)) {
+    obj[key] = changeValuesToVars(`${name}-${key.slice(0, 19)}`, value[key])
+  }
+  return obj
+}
 
 const theme = {
   animation,

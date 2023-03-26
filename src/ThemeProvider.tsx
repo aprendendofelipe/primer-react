@@ -7,6 +7,7 @@ import deepmerge from 'deepmerge'
 const defaultColorMode = 'day'
 const defaultDayScheme = 'light'
 const defaultNightScheme = 'dark'
+const defaultValidSchemes = ['light', 'dark']
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type Theme = {[key: string]: any}
@@ -19,6 +20,7 @@ export type ThemeProviderProps = {
   dayScheme?: string
   nightScheme?: string
   preventSSRMismatch?: boolean
+  validSchemes?: string[]
 }
 
 const ThemeContext = React.createContext<{
@@ -29,6 +31,7 @@ const ThemeContext = React.createContext<{
   resolvedColorScheme?: string
   dayScheme?: string
   nightScheme?: string
+  validSchemes?: string[]
   setColorMode: React.Dispatch<React.SetStateAction<ColorModeWithAuto>>
   setDayScheme: React.Dispatch<React.SetStateAction<string>>
   setNightScheme: React.Dispatch<React.SetStateAction<string>>
@@ -56,6 +59,7 @@ export const ThemeProvider: React.FC<React.PropsWithChildren<ThemeProviderProps>
     colorMode: fallbackColorMode,
     dayScheme: fallbackDayScheme,
     nightScheme: fallbackNightScheme,
+    validSchemes: fallbackValidSchemes,
   } = useTheme()
 
   // Initialize state
@@ -67,12 +71,15 @@ export const ThemeProvider: React.FC<React.PropsWithChildren<ThemeProviderProps>
   const [colorMode, setColorMode] = React.useState(props.colorMode ?? fallbackColorMode ?? defaultColorMode)
   const [dayScheme, setDayScheme] = React.useState(props.dayScheme ?? fallbackDayScheme ?? defaultDayScheme)
   const [nightScheme, setNightScheme] = React.useState(props.nightScheme ?? fallbackNightScheme ?? defaultNightScheme)
+  const [validSchemes, setValidSchemes] = React.useState(
+    props.validSchemes ?? fallbackValidSchemes ?? defaultValidSchemes,
+  )
   const systemColorMode = useSystemColorMode()
   const resolvedColorMode = resolvedColorModePassthrough.current || resolveColorMode(colorMode, systemColorMode)
   const colorScheme = chooseColorScheme(resolvedColorMode, dayScheme, nightScheme)
   const {resolvedTheme, resolvedColorScheme} = React.useMemo(
-    () => applyColorScheme(theme, colorScheme),
-    [theme, colorScheme],
+    () => applyColorScheme(theme, colorScheme, validSchemes),
+    [theme, colorScheme, validSchemes],
   )
 
   // this effect will only run on client
@@ -115,6 +122,10 @@ export const ThemeProvider: React.FC<React.PropsWithChildren<ThemeProviderProps>
     setNightScheme(props.nightScheme ?? fallbackNightScheme ?? defaultNightScheme)
   }, [props.nightScheme, fallbackNightScheme])
 
+  React.useEffect(() => {
+    setValidSchemes(props.validSchemes ?? fallbackValidSchemes ?? defaultValidSchemes)
+  }, [props.validSchemes, fallbackValidSchemes])
+
   return (
     <ThemeContext.Provider
       value={{
@@ -125,6 +136,7 @@ export const ThemeProvider: React.FC<React.PropsWithChildren<ThemeProviderProps>
         resolvedColorScheme,
         dayScheme,
         nightScheme,
+        validSchemes,
         setColorMode,
         setDayScheme,
         setNightScheme,
@@ -206,19 +218,20 @@ function resolveColorMode(colorMode: ColorModeWithAuto, systemColorMode: ColorMo
 }
 
 function chooseColorScheme(colorMode: ColorMode, dayScheme: string, nightScheme: string) {
-  switch (colorMode) {
-    case 'day':
-    case 'light':
-      return dayScheme
-    case 'dark':
-    case 'night':
-      return nightScheme
+  let scheme = dayScheme
+
+  if (['dark', 'night'].includes(colorMode)) scheme = nightScheme
+
+  if (typeof document !== 'undefined') {
+    document.documentElement.setAttribute('theme', scheme)
   }
+  return scheme
 }
 
 function applyColorScheme(
   theme: Theme,
   colorScheme: string,
+  validSchemes: string[],
 ): {resolvedTheme: Theme; resolvedColorScheme: string | undefined} {
   if (!theme.colorSchemes) {
     return {
@@ -228,14 +241,19 @@ function applyColorScheme(
   }
 
   if (!theme.colorSchemes[colorScheme]) {
-    // eslint-disable-next-line no-console
-    console.error(`\`${colorScheme}\` scheme not defined in \`theme.colorSchemes\``)
-
     // Apply the first defined color scheme
-    const defaultColorScheme = Object.keys(theme.colorSchemes)[0]
+    let resolvedColorScheme = Object.keys(theme.colorSchemes)[0]
+    const resolvedTheme = deepmerge(theme, theme.colorSchemes[resolvedColorScheme])
+
+    if (validSchemes.includes(colorScheme)) {
+      resolvedColorScheme = colorScheme
+    } else {
+      // eslint-disable-next-line no-console
+      console.error(`\`${colorScheme}\` scheme not defined in \`theme.colorSchemes\``)
+    }
     return {
-      resolvedTheme: deepmerge(theme, theme.colorSchemes[defaultColorScheme]),
-      resolvedColorScheme: defaultColorScheme,
+      resolvedTheme,
+      resolvedColorScheme,
     }
   }
 

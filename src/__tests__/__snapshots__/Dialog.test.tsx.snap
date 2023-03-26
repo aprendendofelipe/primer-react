@@ -5,14 +5,14 @@ exports[`Dialog Dialog.Header renders consistently 1`] = `
   font-size: 14px;
   font-weight: 600;
   font-family: sans-serif;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
 }
 
 .c0 {
   padding: 16px;
-  background-color: #f6f8fa;
+  background-color: var(--canvas-subtle,#f6f8fa);
   border-radius: 6px 6px 0px 0px;
-  border-bottom: 1px solid #d0d7de;
+  border-bottom: 1px solid var(--border-default,#d0d7de);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -51,7 +51,7 @@ exports[`Dialog renders consistently 1`] = `
   content: ' ';
   background: transparent;
   z-index: 99;
-  background: rgba(27,31,36,0.5);
+  background: var(--primer-canvas-backdrop,rgba(27,31,36,0.5));
 }
 
 <span
@@ -67,25 +67,25 @@ exports[`Dialog renders consistently 1`] = `
   background: transparent;
   cursor: pointer;
   border-radius: 6px;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   position: absolute;
   top: 16px;
   right: 16px;
 }
 
 .c1:focus {
-  outline: solid 2px #0969da;
+  outline: solid 2px var(--accent-fg,#0969da);
 }
 
 .c1:hover {
-  color: #0969da;
+  color: var(--accent-fg,#0969da);
 }
 
 .c3 {
   font-size: 14px;
   font-weight: 600;
   font-family: sans-serif;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
 }
 
 .c5 {
@@ -93,7 +93,7 @@ exports[`Dialog renders consistently 1`] = `
 }
 
 .c0 {
-  box-shadow: 0 8px 24px rgba(140,149,159,0.2);
+  box-shadow: var(--shadow-large,0 8px 24px rgba(140,149,159,0.2));
   border-radius: 6px;
   position: fixed;
   top: 0;
@@ -104,16 +104,16 @@ exports[`Dialog renders consistently 1`] = `
   max-height: 80vh;
   z-index: 999;
   margin: 10vh auto;
-  background-color: #ffffff;
+  background-color: var(--canvas-default,#ffffff);
   width: 440px;
   outline: none;
 }
 
 .c2 {
   padding: 16px;
-  background-color: #f6f8fa;
+  background-color: var(--canvas-subtle,#f6f8fa);
   border-radius: 6px 6px 0px 0px;
-  border-bottom: 1px solid #d0d7de;
+  border-bottom: 1px solid var(--border-default,#d0d7de);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

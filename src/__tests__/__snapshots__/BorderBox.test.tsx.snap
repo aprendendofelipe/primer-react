@@ -4,7 +4,7 @@ exports[`BorderBox renders consistently 1`] = `
 .c0 {
   border-width: 1px;
   border-style: solid;
-  border-color: #d0d7de;
+  border-color: var(--border-default,#d0d7de);
   border-radius: 6px;
 }
 

@@ -23,10 +23,10 @@ exports[`DropdownMenu renders consistently 1`] = `
   text-decoration: none;
   text-align: center;
   font-size: 14px;
-  color: #24292f;
-  background-color: #f6f8fa;
-  border: 1px solid rgba(27,31,36,0.15);
-  box-shadow: 0 1px 0 rgba(27,31,36,0.04),inset 0 1px 0 rgba(255,255,255,0.25);
+  color: var(--btn-text,#24292f);
+  background-color: var(--btn-bg,#f6f8fa);
+  border: 1px solid var(--btn-border,rgba(27,31,36,0.15));
+  box-shadow: var(--btn-shadow,0 1px 0 rgba(27,31,36,0.04)),var(--btn-insetShadow,inset 0 1px 0 rgba(255,255,255,0.25));
 }
 
 .c0:hover {
@@ -47,22 +47,22 @@ exports[`DropdownMenu renders consistently 1`] = `
 }
 
 .c0:hover {
-  background-color: #f3f4f6;
-  border-color: rgba(27,31,36,0.15);
+  background-color: var(--btn-hoverBg,#f3f4f6);
+  border-color: var(--btn-hoverBorder,rgba(27,31,36,0.15));
 }
 
 .c0:focus {
-  outline: solid 2px #0969da;
+  outline: solid 2px var(--accent-fg,#0969da);
 }
 
 .c0:active {
-  background-color: hsla(220,14%,94%,1);
+  background-color: var(--btn-selectedBg,hsla(220,14%,94%,1));
 }
 
 .c0:disabled {
-  color: #8c959f;
-  background-color: #f6f8fa;
-  border-color: rgba(27,31,36,0.15);
+  color: var(--primer-fg-disabled,#8c959f);
+  background-color: var(--btn-bg,#f6f8fa);
+  border-color: var(--btn-border,rgba(27,31,36,0.15));
 }
 
 .c1 {

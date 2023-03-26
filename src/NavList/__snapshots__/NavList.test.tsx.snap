@@ -48,7 +48,7 @@ exports[`NavList renders a simple list 1`] = `
   border-radius: 6px;
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -61,7 +61,7 @@ exports[`NavList renders a simple list 1`] = `
   margin-top: unset;
   margin-bottom: unset;
   font-weight: 600;
-  background-color: rgba(208,215,222,0.24);
+  background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
 }
 
 .c2[aria-disabled] {
@@ -84,7 +84,7 @@ exports[`NavList renders a simple list 1`] = `
 }
 
 .c2:not(:first-of-type) {
-  --divider-color: rgba(208,215,222,0.48);
+  --divider-color: var(--actionListItem-inlineDivider,rgba(208,215,222,0.48));
 }
 
 [data-component="ActionList.Divider"] + .c2 {
@@ -110,7 +110,7 @@ exports[`NavList renders a simple list 1`] = `
   width: 4px;
   height: 24px;
   content: "";
-  background-color: #0969da;
+  background-color: var(--accent-fg,#0969da);
   border-radius: 6px;
 }
 
@@ -132,7 +132,7 @@ exports[`NavList renders a simple list 1`] = `
   border-radius: 6px;
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -166,7 +166,7 @@ exports[`NavList renders a simple list 1`] = `
 }
 
 .c6:not(:first-of-type) {
-  --divider-color: rgba(208,215,222,0.48);
+  --divider-color: var(--actionListItem-inlineDivider,rgba(208,215,222,0.48));
 }
 
 [data-component="ActionList.Divider"] + .c6 {
@@ -186,7 +186,7 @@ exports[`NavList renders a simple list 1`] = `
 }
 
 .c3 {
-  color: #0969da;
+  color: var(--accent-fg,#0969da);
   -webkit-text-decoration: none;
   text-decoration: none;
   padding-left: 8px;
@@ -235,14 +235,14 @@ exports[`NavList renders a simple list 1`] = `
 
 @media (hover:hover) and (pointer:fine) {
   .c2:hover:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.32);
-    color: #24292f;
+    background-color: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
+    color: var(--fg-default,#24292f);
   }
 
   .c2:focus:not([data-focus-visible-added]),
   .c2 > a:focus:not([data-focus-visible-added]) {
-    background-color: rgba(208,215,222,0.24);
-    color: #24292f;
+    background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
+    color: var(--fg-default,#24292f);
     outline: none;
   }
 
@@ -250,12 +250,12 @@ exports[`NavList renders a simple list 1`] = `
   .c2 > a[data-focus-visible-added] {
     outline: none;
     border: 2 solid;
-    box-shadow: 0 0 0 2px #0969da;
+    box-shadow: 0 0 0 2px var(--accent-emphasis,#0969da);
   }
 
   .c2:active:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.48);
-    color: #24292f;
+    background-color: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
+    color: var(--fg-default,#24292f);
   }
 }
 
@@ -267,14 +267,14 @@ exports[`NavList renders a simple list 1`] = `
 
 @media (hover:hover) and (pointer:fine) {
   .c6:hover:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.32);
-    color: #24292f;
+    background-color: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
+    color: var(--fg-default,#24292f);
   }
 
   .c6:focus:not([data-focus-visible-added]),
   .c6 > a:focus:not([data-focus-visible-added]) {
-    background-color: rgba(208,215,222,0.24);
-    color: #24292f;
+    background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
+    color: var(--fg-default,#24292f);
     outline: none;
   }
 
@@ -282,12 +282,12 @@ exports[`NavList renders a simple list 1`] = `
   .c6 > a[data-focus-visible-added] {
     outline: none;
     border: 2 solid;
-    box-shadow: 0 0 0 2px #0969da;
+    box-shadow: 0 0 0 2px var(--accent-emphasis,#0969da);
   }
 
   .c6:active:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.48);
-    color: #24292f;
+    background-color: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
+    color: var(--fg-default,#24292f);
   }
 }
 
@@ -401,7 +401,7 @@ exports[`NavList renders with groups 1`] = `
 
 .c1 {
   height: 1px;
-  background-color: rgba(208,215,222,0.48);
+  background-color: var(--actionListItem-inlineDivider,rgba(208,215,222,0.48));
   margin-top: calc(8px - 1px);
   margin-bottom: 8px;
   list-style: none;
@@ -426,7 +426,7 @@ exports[`NavList renders with groups 1`] = `
   padding-right: 16px;
   font-size: 12px;
   font-weight: 600;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
 }
 
 .c4 {
@@ -458,7 +458,7 @@ exports[`NavList renders with groups 1`] = `
   border-radius: 6px;
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -471,7 +471,7 @@ exports[`NavList renders with groups 1`] = `
   margin-top: unset;
   margin-bottom: unset;
   font-weight: 600;
-  background-color: rgba(208,215,222,0.24);
+  background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
 }
 
 .c6[aria-disabled] {
@@ -494,7 +494,7 @@ exports[`NavList renders with groups 1`] = `
 }
 
 .c6:not(:first-of-type) {
-  --divider-color: rgba(208,215,222,0.48);
+  --divider-color: var(--actionListItem-inlineDivider,rgba(208,215,222,0.48));
 }
 
 [data-component="ActionList.Divider"] + .c6 {
@@ -520,7 +520,7 @@ exports[`NavList renders with groups 1`] = `
   width: 4px;
   height: 24px;
   content: "";
-  background-color: #0969da;
+  background-color: var(--accent-fg,#0969da);
   border-radius: 6px;
 }
 
@@ -542,7 +542,7 @@ exports[`NavList renders with groups 1`] = `
   border-radius: 6px;
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -576,7 +576,7 @@ exports[`NavList renders with groups 1`] = `
 }
 
 .c10:not(:first-of-type) {
-  --divider-color: rgba(208,215,222,0.48);
+  --divider-color: var(--actionListItem-inlineDivider,rgba(208,215,222,0.48));
 }
 
 [data-component="ActionList.Divider"] + .c10 {
@@ -596,7 +596,7 @@ exports[`NavList renders with groups 1`] = `
 }
 
 .c7 {
-  color: #0969da;
+  color: var(--accent-fg,#0969da);
   -webkit-text-decoration: none;
   text-decoration: none;
   padding-left: 8px;
@@ -645,14 +645,14 @@ exports[`NavList renders with groups 1`] = `
 
 @media (hover:hover) and (pointer:fine) {
   .c6:hover:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.32);
-    color: #24292f;
+    background-color: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
+    color: var(--fg-default,#24292f);
   }
 
   .c6:focus:not([data-focus-visible-added]),
   .c6 > a:focus:not([data-focus-visible-added]) {
-    background-color: rgba(208,215,222,0.24);
-    color: #24292f;
+    background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
+    color: var(--fg-default,#24292f);
     outline: none;
   }
 
@@ -660,12 +660,12 @@ exports[`NavList renders with groups 1`] = `
   .c6 > a[data-focus-visible-added] {
     outline: none;
     border: 2 solid;
-    box-shadow: 0 0 0 2px #0969da;
+    box-shadow: 0 0 0 2px var(--accent-emphasis,#0969da);
   }
 
   .c6:active:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.48);
-    color: #24292f;
+    background-color: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
+    color: var(--fg-default,#24292f);
   }
 }
 
@@ -677,14 +677,14 @@ exports[`NavList renders with groups 1`] = `
 
 @media (hover:hover) and (pointer:fine) {
   .c10:hover:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.32);
-    color: #24292f;
+    background-color: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
+    color: var(--fg-default,#24292f);
   }
 
   .c10:focus:not([data-focus-visible-added]),
   .c10 > a:focus:not([data-focus-visible-added]) {
-    background-color: rgba(208,215,222,0.24);
-    color: #24292f;
+    background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
+    color: var(--fg-default,#24292f);
     outline: none;
   }
 
@@ -692,12 +692,12 @@ exports[`NavList renders with groups 1`] = `
   .c10 > a[data-focus-visible-added] {
     outline: none;
     border: 2 solid;
-    box-shadow: 0 0 0 2px #0969da;
+    box-shadow: 0 0 0 2px var(--accent-emphasis,#0969da);
   }
 
   .c10:active:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.48);
-    color: #24292f;
+    background-color: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
+    color: var(--fg-default,#24292f);
   }
 }
 
@@ -863,7 +863,7 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   margin-left: 8px;
   font-weight: initial;
 }
@@ -899,7 +899,7 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
   border-radius: 6px;
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -912,7 +912,7 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
   margin-top: unset;
   margin-bottom: unset;
   font-weight: 600;
-  background-color: rgba(208,215,222,0.24);
+  background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
 }
 
 .c10[aria-disabled] {
@@ -935,7 +935,7 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
 }
 
 .c10:not(:first-of-type) {
-  --divider-color: rgba(208,215,222,0.48);
+  --divider-color: var(--actionListItem-inlineDivider,rgba(208,215,222,0.48));
 }
 
 [data-component="ActionList.Divider"] + .c10 {
@@ -961,7 +961,7 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
   width: 4px;
   height: 24px;
   content: "";
-  background-color: #0969da;
+  background-color: var(--accent-fg,#0969da);
   border-radius: 6px;
 }
 
@@ -1025,7 +1025,7 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
   border-radius: 6px;
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1060,7 +1060,7 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
 }
 
 .c3:not(:first-of-type) {
-  --divider-color: rgba(208,215,222,0.48);
+  --divider-color: var(--actionListItem-inlineDivider,rgba(208,215,222,0.48));
 }
 
 [data-component="ActionList.Divider"] + .c3 {
@@ -1086,7 +1086,7 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
 }
 
 .c11 {
-  color: #0969da;
+  color: var(--accent-fg,#0969da);
   -webkit-text-decoration: none;
   text-decoration: none;
   padding-left: 32px;
@@ -1137,14 +1137,14 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
 
 @media (hover:hover) and (pointer:fine) {
   .c10:hover:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.32);
-    color: #24292f;
+    background-color: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
+    color: var(--fg-default,#24292f);
   }
 
   .c10:focus:not([data-focus-visible-added]),
   .c10 > a:focus:not([data-focus-visible-added]) {
-    background-color: rgba(208,215,222,0.24);
-    color: #24292f;
+    background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
+    color: var(--fg-default,#24292f);
     outline: none;
   }
 
@@ -1152,12 +1152,12 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
   .c10 > a[data-focus-visible-added] {
     outline: none;
     border: 2 solid;
-    box-shadow: 0 0 0 2px #0969da;
+    box-shadow: 0 0 0 2px var(--accent-emphasis,#0969da);
   }
 
   .c10:active:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.48);
-    color: #24292f;
+    background-color: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
+    color: var(--fg-default,#24292f);
   }
 }
 
@@ -1169,14 +1169,14 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
 
 @media (hover:hover) and (pointer:fine) {
   .c3:hover:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.32);
-    color: #24292f;
+    background-color: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
+    color: var(--fg-default,#24292f);
   }
 
   .c3:focus:not([data-focus-visible-added]),
   .c3 > a:focus:not([data-focus-visible-added]) {
-    background-color: rgba(208,215,222,0.24);
-    color: #24292f;
+    background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
+    color: var(--fg-default,#24292f);
     outline: none;
   }
 
@@ -1184,12 +1184,12 @@ exports[`NavList.Item with NavList.SubNav does not have active styles if SubNav 
   .c3 > a[data-focus-visible-added] {
     outline: none;
     border: 2 solid;
-    box-shadow: 0 0 0 2px #0969da;
+    box-shadow: 0 0 0 2px var(--accent-emphasis,#0969da);
   }
 
   .c3:active:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.48);
-    color: #24292f;
+    background-color: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
+    color: var(--fg-default,#24292f);
   }
 }
 
@@ -1338,7 +1338,7 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   margin-left: 8px;
   font-weight: initial;
 }
@@ -1374,7 +1374,7 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
   border-radius: 6px;
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1387,7 +1387,7 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
   margin-top: unset;
   margin-bottom: unset;
   font-weight: 600;
-  background-color: rgba(208,215,222,0.24);
+  background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
 }
 
 .c10[aria-disabled] {
@@ -1410,7 +1410,7 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
 }
 
 .c10:not(:first-of-type) {
-  --divider-color: rgba(208,215,222,0.48);
+  --divider-color: var(--actionListItem-inlineDivider,rgba(208,215,222,0.48));
 }
 
 [data-component="ActionList.Divider"] + .c10 {
@@ -1436,7 +1436,7 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
   width: 4px;
   height: 24px;
   content: "";
-  background-color: #0969da;
+  background-color: var(--accent-fg,#0969da);
   border-radius: 6px;
 }
 
@@ -1506,7 +1506,7 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
   border-radius: 6px;
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1519,7 +1519,7 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
   margin-top: unset;
   margin-bottom: unset;
   font-weight: 600;
-  background-color: rgba(208,215,222,0.24);
+  background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
 }
 
 .c3[aria-disabled] {
@@ -1542,7 +1542,7 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
 }
 
 .c3:not(:first-of-type) {
-  --divider-color: rgba(208,215,222,0.48);
+  --divider-color: var(--actionListItem-inlineDivider,rgba(208,215,222,0.48));
 }
 
 [data-component="ActionList.Divider"] + .c3 {
@@ -1568,12 +1568,12 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
   width: 4px;
   height: 24px;
   content: "";
-  background-color: #0969da;
+  background-color: var(--accent-fg,#0969da);
   border-radius: 6px;
 }
 
 .c11 {
-  color: #0969da;
+  color: var(--accent-fg,#0969da);
   -webkit-text-decoration: none;
   text-decoration: none;
   padding-left: 32px;
@@ -1624,14 +1624,14 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
 
 @media (hover:hover) and (pointer:fine) {
   .c10:hover:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.32);
-    color: #24292f;
+    background-color: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
+    color: var(--fg-default,#24292f);
   }
 
   .c10:focus:not([data-focus-visible-added]),
   .c10 > a:focus:not([data-focus-visible-added]) {
-    background-color: rgba(208,215,222,0.24);
-    color: #24292f;
+    background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
+    color: var(--fg-default,#24292f);
     outline: none;
   }
 
@@ -1639,12 +1639,12 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
   .c10 > a[data-focus-visible-added] {
     outline: none;
     border: 2 solid;
-    box-shadow: 0 0 0 2px #0969da;
+    box-shadow: 0 0 0 2px var(--accent-emphasis,#0969da);
   }
 
   .c10:active:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.48);
-    color: #24292f;
+    background-color: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
+    color: var(--fg-default,#24292f);
   }
 }
 
@@ -1656,14 +1656,14 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
 
 @media (hover:hover) and (pointer:fine) {
   .c3:hover:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.32);
-    color: #24292f;
+    background-color: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
+    color: var(--fg-default,#24292f);
   }
 
   .c3:focus:not([data-focus-visible-added]),
   .c3 > a:focus:not([data-focus-visible-added]) {
-    background-color: rgba(208,215,222,0.24);
-    color: #24292f;
+    background-color: var(--actionListItem-default-selectedBg,rgba(208,215,222,0.24));
+    color: var(--fg-default,#24292f);
     outline: none;
   }
 
@@ -1671,12 +1671,12 @@ exports[`NavList.Item with NavList.SubNav has active styles if SubNav contains t
   .c3 > a[data-focus-visible-added] {
     outline: none;
     border: 2 solid;
-    box-shadow: 0 0 0 2px #0969da;
+    box-shadow: 0 0 0 2px var(--accent-emphasis,#0969da);
   }
 
   .c3:active:not([aria-disabled]) {
-    background-color: rgba(208,215,222,0.48);
-    color: #24292f;
+    background-color: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
+    color: var(--fg-default,#24292f);
   }
 }
 

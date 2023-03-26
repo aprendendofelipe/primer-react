@@ -35,7 +35,7 @@ exports[`ChoiceFieldset renders a disabled list 1`] = `
 }
 
 .c2 {
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   font-size: 16px;
   padding: 0;
 }
@@ -44,7 +44,7 @@ exports[`ChoiceFieldset renders a disabled list 1`] = `
   font-weight: 600;
   font-size: 14px;
   display: block;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   cursor: not-allowed;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
@@ -55,7 +55,7 @@ exports[`ChoiceFieldset renders a disabled list 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-color: #6e7781;
+  border-color: var(--neutral-emphasis,#6e7781);
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -73,22 +73,22 @@ exports[`ChoiceFieldset renders a disabled list 1`] = `
 
 .c6:disabled {
   background-color: var(--color-input-disabled-bg,rgba(175,184,193,0.2));
-  border-color: #d0d7de;
+  border-color: var(--border-default,#d0d7de);
 }
 
 .c6:checked {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   border-width: var(--base-size-4,4px);
 }
 
 .c6:checked:disabled {
   cursor: not-allowed;
-  border-color: #57606a;
+  border-color: var(--fg-muted,#57606a);
 }
 
 .c6:focus:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -98,7 +98,7 @@ exports[`ChoiceFieldset renders a disabled list 1`] = `
 
 .c6:focus-visible:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -261,7 +261,7 @@ exports[`ChoiceFieldset renders a fieldset with a description 1`] = `
   font-weight: 600;
   font-size: 14px;
   display: block;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
@@ -270,14 +270,14 @@ exports[`ChoiceFieldset renders a fieldset with a description 1`] = `
 
 .c3 {
   font-size: 14px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
 }
 
 .c7 {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-color: #6e7781;
+  border-color: var(--neutral-emphasis,#6e7781);
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -295,22 +295,22 @@ exports[`ChoiceFieldset renders a fieldset with a description 1`] = `
 
 .c7:disabled {
   background-color: var(--color-input-disabled-bg,rgba(175,184,193,0.2));
-  border-color: #d0d7de;
+  border-color: var(--border-default,#d0d7de);
 }
 
 .c7:checked {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   border-width: var(--base-size-4,4px);
 }
 
 .c7:checked:disabled {
   cursor: not-allowed;
-  border-color: #57606a;
+  border-color: var(--fg-muted,#57606a);
 }
 
 .c7:focus:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -320,7 +320,7 @@ exports[`ChoiceFieldset renders a fieldset with a description 1`] = `
 
 .c7:focus-visible:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -485,7 +485,7 @@ exports[`ChoiceFieldset renders a list of items with leading visuals and caption
 
 .c7 {
   margin-left: 8px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
 }
 
 .c7 > * {
@@ -503,7 +503,7 @@ exports[`ChoiceFieldset renders a list of items with leading visuals and caption
   font-weight: 600;
   font-size: 14px;
   display: block;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
@@ -512,7 +512,7 @@ exports[`ChoiceFieldset renders a list of items with leading visuals and caption
 
 .c10 {
   font-size: 12px;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   display: block;
 }
 
@@ -520,7 +520,7 @@ exports[`ChoiceFieldset renders a list of items with leading visuals and caption
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-color: #6e7781;
+  border-color: var(--neutral-emphasis,#6e7781);
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -538,22 +538,22 @@ exports[`ChoiceFieldset renders a list of items with leading visuals and caption
 
 .c6:disabled {
   background-color: var(--color-input-disabled-bg,rgba(175,184,193,0.2));
-  border-color: #d0d7de;
+  border-color: var(--border-default,#d0d7de);
 }
 
 .c6:checked {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   border-width: var(--base-size-4,4px);
 }
 
 .c6:checked:disabled {
   cursor: not-allowed;
-  border-color: #57606a;
+  border-color: var(--fg-muted,#57606a);
 }
 
 .c6:focus:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -563,7 +563,7 @@ exports[`ChoiceFieldset renders a list of items with leading visuals and caption
 
 .c6:focus-visible:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -794,7 +794,7 @@ exports[`ChoiceFieldset renders a list with selected items 1`] = `
   font-weight: 600;
   font-size: 14px;
   display: block;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
@@ -805,7 +805,7 @@ exports[`ChoiceFieldset renders a list with selected items 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-color: #6e7781;
+  border-color: var(--neutral-emphasis,#6e7781);
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -823,7 +823,7 @@ exports[`ChoiceFieldset renders a list with selected items 1`] = `
 
 .c6:disabled {
   background-color: var(--color-input-disabled-bg,rgba(175,184,193,0.2));
-  border-color: #d0d7de;
+  border-color: var(--border-default,#d0d7de);
 }
 
 .c6::before {
@@ -831,7 +831,7 @@ exports[`ChoiceFieldset renders a list with selected items 1`] = `
   height: var(--base-size-16,16px);
   visibility: hidden;
   content: '';
-  background-color: #ffffff;
+  background-color: var(--fg-onEmphasis,#ffffff);
   -webkit-transition: visibility 0s linear 230ms;
   transition: visibility 0s linear 230ms;
   -webkit-clip-path: inset(var(--base-size-16,16px) 0 0 0);
@@ -848,8 +848,8 @@ exports[`ChoiceFieldset renders a list with selected items 1`] = `
 
 .c6:checked,
 .c6:indeterminate {
-  background: #0969da;
-  border-color: #0969da;
+  background: var(--accent-fg,#0969da);
+  border-color: var(--accent-fg,#0969da);
 }
 
 .c6:checked {
@@ -865,17 +865,17 @@ exports[`ChoiceFieldset renders a list with selected items 1`] = `
 
 .c6:checked:disabled {
   cursor: not-allowed;
-  background-color: #57606a;
-  border-color: #57606a;
+  background-color: var(--fg-muted,#57606a);
+  border-color: var(--fg-muted,#57606a);
   opacity: 1;
 }
 
 .c6:checked:disabled::before {
-  background-color: #ffffff;
+  background-color: var(--fg-onEmphasis,#ffffff);
 }
 
 .c6:indeterminate {
-  background: #0969da;
+  background: var(--accent-fg,#0969da);
 }
 
 .c6:indeterminate::before {
@@ -886,7 +886,7 @@ exports[`ChoiceFieldset renders a list with selected items 1`] = `
 
 .c6:focus:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -896,7 +896,7 @@ exports[`ChoiceFieldset renders a list with selected items 1`] = `
 
 .c6:focus-visible:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -1110,7 +1110,7 @@ exports[`ChoiceFieldset renders a required fieldset 1`] = `
   font-weight: 600;
   font-size: 14px;
   display: block;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
@@ -1121,7 +1121,7 @@ exports[`ChoiceFieldset renders a required fieldset 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-color: #6e7781;
+  border-color: var(--neutral-emphasis,#6e7781);
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -1139,22 +1139,22 @@ exports[`ChoiceFieldset renders a required fieldset 1`] = `
 
 .c7:disabled {
   background-color: var(--color-input-disabled-bg,rgba(175,184,193,0.2));
-  border-color: #d0d7de;
+  border-color: var(--border-default,#d0d7de);
 }
 
 .c7:checked {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   border-width: var(--base-size-4,4px);
 }
 
 .c7:checked:disabled {
   cursor: not-allowed;
-  border-color: #57606a;
+  border-color: var(--fg-muted,#57606a);
 }
 
 .c7:focus:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -1164,7 +1164,7 @@ exports[`ChoiceFieldset renders a required fieldset 1`] = `
 
 .c7:focus-visible:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -1338,7 +1338,7 @@ exports[`ChoiceFieldset renders default 1`] = `
   font-weight: 600;
   font-size: 14px;
   display: block;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
@@ -1349,7 +1349,7 @@ exports[`ChoiceFieldset renders default 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-color: #6e7781;
+  border-color: var(--neutral-emphasis,#6e7781);
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -1367,22 +1367,22 @@ exports[`ChoiceFieldset renders default 1`] = `
 
 .c6:disabled {
   background-color: var(--color-input-disabled-bg,rgba(175,184,193,0.2));
-  border-color: #d0d7de;
+  border-color: var(--border-default,#d0d7de);
 }
 
 .c6:checked {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   border-width: var(--base-size-4,4px);
 }
 
 .c6:checked:disabled {
   cursor: not-allowed;
-  border-color: #57606a;
+  border-color: var(--fg-muted,#57606a);
 }
 
 .c6:focus:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -1392,7 +1392,7 @@ exports[`ChoiceFieldset renders default 1`] = `
 
 .c6:focus-visible:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -1553,7 +1553,7 @@ exports[`ChoiceFieldset renders with a custom name and id passed 1`] = `
   font-weight: 600;
   font-size: 14px;
   display: block;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
@@ -1564,7 +1564,7 @@ exports[`ChoiceFieldset renders with a custom name and id passed 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-color: #6e7781;
+  border-color: var(--neutral-emphasis,#6e7781);
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -1582,22 +1582,22 @@ exports[`ChoiceFieldset renders with a custom name and id passed 1`] = `
 
 .c6:disabled {
   background-color: var(--color-input-disabled-bg,rgba(175,184,193,0.2));
-  border-color: #d0d7de;
+  border-color: var(--border-default,#d0d7de);
 }
 
 .c6:checked {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   border-width: var(--base-size-4,4px);
 }
 
 .c6:checked:disabled {
   cursor: not-allowed;
-  border-color: #57606a;
+  border-color: var(--fg-muted,#57606a);
 }
 
 .c6:focus:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -1607,7 +1607,7 @@ exports[`ChoiceFieldset renders with a custom name and id passed 1`] = `
 
 .c6:focus-visible:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -1759,7 +1759,7 @@ exports[`ChoiceFieldset renders with a hidden legend 1`] = `
   font-weight: 600;
   font-size: 14px;
   display: block;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   cursor: pointer;
   -webkit-align-self: flex-start;
   -ms-flex-item-align: start;
@@ -1783,7 +1783,7 @@ exports[`ChoiceFieldset renders with a hidden legend 1`] = `
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-color: #6e7781;
+  border-color: var(--neutral-emphasis,#6e7781);
   border-style: solid;
   border-width: 1px;
   cursor: pointer;
@@ -1801,22 +1801,22 @@ exports[`ChoiceFieldset renders with a hidden legend 1`] = `
 
 .c5:disabled {
   background-color: var(--color-input-disabled-bg,rgba(175,184,193,0.2));
-  border-color: #d0d7de;
+  border-color: var(--border-default,#d0d7de);
 }
 
 .c5:checked {
-  border-color: #0969da;
+  border-color: var(--accent-fg,#0969da);
   border-width: var(--base-size-4,4px);
 }
 
 .c5:checked:disabled {
   cursor: not-allowed;
-  border-color: #57606a;
+  border-color: var(--fg-muted,#57606a);
 }
 
 .c5:focus:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 
@@ -1826,7 +1826,7 @@ exports[`ChoiceFieldset renders with a hidden legend 1`] = `
 
 .c5:focus-visible:not(:disabled) {
   box-shadow: none;
-  outline: 2px solid #0969da;
+  outline: 2px solid var(--accent-fg,#0969da);
   outline-offset: 2px;
 }
 

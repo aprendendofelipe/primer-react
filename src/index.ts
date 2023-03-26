@@ -1,4 +1,5 @@
 export {default as theme} from './theme'
+export {default as themes} from './themes-vars'
 export {get as themeGet} from './constants'
 export {default as BaseStyles} from './BaseStyles'
 export type {BaseStylesProps} from './BaseStyles'

@@ -14,7 +14,7 @@ exports[`ActionList renders consistently 1`] = `
 .c0[data-has-active-descendant],
 .c0:focus-within {
   --item-hover-bg-override: none;
-  --item-hover-divider-border-color-override: hsla(210,18%,87%,1);
+  --item-hover-divider-border-color-override: var(--border-muted,hsla(210,18%,87%,1));
 }
 
 <div
@@ -69,7 +69,7 @@ exports[`ActionList.Item renders consistently 1`] = `
   position: absolute;
   width: 100%;
   top: -7px;
-  border: 0 solid hsla(210,18%,87%,1);
+  border: 0 solid var(--border-muted,hsla(210,18%,87%,1));
   border-top-width: 0;
 }
 
@@ -95,7 +95,7 @@ exports[`ActionList.Item renders consistently 1`] = `
   position: absolute;
   width: 100%;
   top: -7px;
-  border: 0 solid hsla(210,18%,87%,1);
+  border: 0 solid var(--border-muted,hsla(210,18%,87%,1));
   border-top-width: 0;
 }
 
@@ -121,7 +121,7 @@ exports[`ActionList.Item renders consistently 1`] = `
   position: absolute;
   width: 100%;
   top: -7px;
-  border: 0 solid hsla(210,18%,87%,1);
+  border: 0 solid var(--border-muted,hsla(210,18%,87%,1));
   border-top-width: 0;
 }
 
@@ -144,7 +144,7 @@ exports[`ActionList.Item renders consistently 1`] = `
   display: -ms-flexbox;
   display: flex;
   border-radius: 6px;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
   -webkit-transition: background 33.333ms linear;
   transition: background 33.333ms linear;
   -webkit-text-decoration: none;
@@ -161,7 +161,7 @@ exports[`ActionList.Item renders consistently 1`] = `
   position: absolute;
   width: 100%;
   top: -7px;
-  border: 0 solid hsla(210,18%,87%,1);
+  border: 0 solid var(--border-muted,hsla(210,18%,87%,1));
   border-top-width: 0;
 }
 
@@ -178,25 +178,25 @@ exports[`ActionList.Item renders consistently 1`] = `
 }
 
 .c1[data-is-active-descendant='activated-directly'] {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 .c1[data-is-active-descendant='activated-indirectly'] {
-  background: rgba(208,215,222,0.32);
+  background: var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32));
 }
 
 .c1:focus {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
   outline: none;
 }
 
 .c1:active {
-  background: rgba(208,215,222,0.48);
+  background: var(--actionListItem-default-activeBg,rgba(208,215,222,0.48));
 }
 
 @media (hover:hover) and (pointer:fine) {
   .c1:hover {
-    background: var( --item-hover-bg-override,rgba(208,215,222,0.32) );
+    background: var( --item-hover-bg-override,var(--actionListItem-default-hoverBg,rgba(208,215,222,0.32)) );
     cursor: pointer;
   }
 }

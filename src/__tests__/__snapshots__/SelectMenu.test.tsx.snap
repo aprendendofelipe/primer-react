@@ -23,10 +23,10 @@ exports[`SelectMenu right-aligned modal has right: 0px 1`] = `
   text-decoration: none;
   text-align: center;
   font-size: 14px;
-  color: #24292f;
-  background-color: #f6f8fa;
-  border: 1px solid rgba(27,31,36,0.15);
-  box-shadow: 0 1px 0 rgba(27,31,36,0.04),inset 0 1px 0 rgba(255,255,255,0.25);
+  color: var(--btn-text,#24292f);
+  background-color: var(--btn-bg,#f6f8fa);
+  border: 1px solid var(--btn-border,rgba(27,31,36,0.15));
+  box-shadow: var(--btn-shadow,0 1px 0 rgba(27,31,36,0.04)),var(--btn-insetShadow,inset 0 1px 0 rgba(255,255,255,0.25));
 }
 
 .c1:hover {
@@ -47,22 +47,22 @@ exports[`SelectMenu right-aligned modal has right: 0px 1`] = `
 }
 
 .c1:hover {
-  background-color: #f3f4f6;
-  border-color: rgba(27,31,36,0.15);
+  background-color: var(--btn-hoverBg,#f3f4f6);
+  border-color: var(--btn-hoverBorder,rgba(27,31,36,0.15));
 }
 
 .c1:focus {
-  outline: solid 2px #0969da;
+  outline: solid 2px var(--accent-fg,#0969da);
 }
 
 .c1:active {
-  background-color: hsla(220,14%,94%,1);
+  background-color: var(--btn-selectedBg,hsla(220,14%,94%,1));
 }
 
 .c1:disabled {
-  color: #8c959f;
-  background-color: #f6f8fa;
-  border-color: rgba(27,31,36,0.15);
+  color: var(--primer-fg-disabled,#8c959f);
+  background-color: var(--btn-bg,#f6f8fa);
+  border-color: var(--btn-border,rgba(27,31,36,0.15));
 }
 
 .c6 {
@@ -70,18 +70,18 @@ exports[`SelectMenu right-aligned modal has right: 0px 1`] = `
   margin: 0;
   font-size: 12px;
   font-weight: 600;
-  color: #57606a;
-  background-color: #f6f8fa;
-  border-bottom: 1px solid hsla(210,18%,87%,1);
+  color: var(--fg-muted,#57606a);
+  background-color: var(--canvas-subtle,#f6f8fa);
+  border-bottom: 1px solid var(--border-muted,hsla(210,18%,87%,1));
 }
 
 .c7 {
   margin-top: -1px;
   padding: 8px 16px;
   font-size: 12px;
-  color: #57606a;
+  color: var(--fg-muted,#57606a);
   text-align: center;
-  border-top: 1px solid hsla(210,18%,87%,1);
+  border-top: 1px solid var(--border-muted,hsla(210,18%,87%,1));
 }
 
 .c5 {
@@ -97,10 +97,10 @@ exports[`SelectMenu right-aligned modal has right: 0px 1`] = `
   overflow: hidden;
   text-align: left;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: var(--canvas-overlay,#ffffff);
   border: 0;
-  border-bottom: 1px solid hsla(210,18%,87%,1);
-  color: #57606a;
+  border-bottom: 1px solid var(--border-muted,hsla(210,18%,87%,1));
+  color: var(--fg-muted,#57606a);
   -webkit-text-decoration: none;
   text-decoration: none;
   font-size: 12px;
@@ -141,7 +141,7 @@ exports[`SelectMenu right-aligned modal has right: 0px 1`] = `
 
 .c5[aria-checked='true'] {
   font-weight: 500;
-  color: #24292f;
+  color: var(--fg-default,#24292f);
 }
 
 .c5[aria-checked='true'] .SelectMenu-selected-icon {
@@ -163,7 +163,7 @@ exports[`SelectMenu right-aligned modal has right: 0px 1`] = `
   flex: auto;
   overflow-x: hidden;
   overflow-y: auto;
-  background-color: #ffffff;
+  background-color: var(--canvas-overlay,#ffffff);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -181,9 +181,9 @@ exports[`SelectMenu right-aligned modal has right: 0px 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: var(--canvas-overlay,#ffffff);
   border-radius: 6px;
-  box-shadow: 0 1px 0 rgba(27,31,36,0.04);
+  box-shadow: var(--shadow-small,0 1px 0 rgba(27,31,36,0.04));
   -webkit-animation: lejQAW 0.12s cubic-bezier(0,0.1,0.1,1) backwards;
   animation: lejQAW 0.12s cubic-bezier(0,0.1,0.1,1) backwards;
   width: 300px;
@@ -215,7 +215,7 @@ exports[`SelectMenu right-aligned modal has right: 0px 1`] = `
   left: 0;
   pointer-events: none;
   content: '';
-  background-color: rgba(27,31,36,0.5);
+  background-color: var(--primer-canvas-backdrop,rgba(27,31,36,0.5));
 }
 
 .c0 > summary {
@@ -247,34 +247,34 @@ exports[`SelectMenu right-aligned modal has right: 0px 1`] = `
   .c5:hover,
   .c5:active,
   .c5:focus {
-    background-color: rgba(234,238,242,0.5);
+    background-color: var(--neutral-subtle,rgba(234,238,242,0.5));
   }
 }
 
 @media (hover:none) {
   .c5 {
-    -webkit-tap-highlight-color: rgba(175,184,193,0.5);
+    -webkit-tap-highlight-color: var(--selectMenu-tapHighlight,rgba(175,184,193,0.5));
   }
 
   .c5:focus,
   .c5:active {
-    background-color: #f6f8fa;
+    background-color: var(--canvas-subtle,#f6f8fa);
   }
 }
 
 @media (hover:hover) {
   .c4 .SelectMenuTab:focus {
-    background-color: #b6e3ff;
+    background-color: var(--selectMenu-tapFocusBg,#b6e3ff);
   }
 
   .c4 .SelectMenuTab:not([aria-checked='true']):hover {
-    color: #24292f;
-    background-color: #f6f8fa;
+    color: var(--fg-default,#24292f);
+    background-color: var(--canvas-subtle,#f6f8fa);
   }
 
   .c4 .SelectMenuTab:not([aria-checked='true']):active {
-    color: #24292f;
-    background-color: #f6f8fa;
+    color: var(--fg-default,#24292f);
+    background-color: var(--canvas-subtle,#f6f8fa);
   }
 }
 
@@ -284,9 +284,9 @@ exports[`SelectMenu right-aligned modal has right: 0px 1`] = `
     max-height: 350px;
     margin: 4px 0 16px 0;
     font-size: 12px;
-    border: 1px solid #d0d7de;
+    border: 1px solid var(--border-default,#d0d7de);
     border-radius: 6px;
-    box-shadow: 0 1px 0 rgba(27,31,36,0.04);
+    box-shadow: var(--shadow-small,0 1px 0 rgba(27,31,36,0.04));
   }
 }
 
